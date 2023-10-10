@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".screens.MainActivity">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mainBtnUploadImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Upload Images"
+            tools:ignore="HardcodedText" />
+
+        <ProgressBar
+            android:id="@+id/mainPb"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/mainTvLogs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:hint="Logs"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
